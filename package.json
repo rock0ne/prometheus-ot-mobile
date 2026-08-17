@@ -1,0 +1,38 @@
+{
+  "name": "prometheus-ot-mobile",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Offline-first purple-team learning lab for Android, iOS and the web.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rock0ne/prometheus-ot-mobile.git"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "safety": "node scripts/public-safety.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "sync": "cap sync",
+    "android": "cap open android",
+    "ios": "cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "8.5.0",
+    "@capacitor/network": "8.0.1"
+  },
+  "devDependencies": {
+    "@capacitor/android": "8.5.0",
+    "@capacitor/cli": "8.5.0",
+    "@capacitor/ios": "8.5.0",
+    "typescript": "7.0.2",
+    "vite": "8.2.1",
+    "vitest": "4.1.10"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@11.19.0"
+}
